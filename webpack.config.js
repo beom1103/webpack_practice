@@ -1,4 +1,6 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   //개발 모드
@@ -21,11 +23,17 @@ module.exports = {
       {
         test: /\.png$/,
         loader: "file-loader",
-        // 퍼블릭 경로를 dist로 설정해 상대경로로 입력
+        // 해쉬값이 아니라 파일명 그대로 가져옴
         options: {
-          publicPath: "../dist",
+          name: "[name].[ext]?[hash]",
         },
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+    new CleanWebpackPlugin(),
+  ],
 };
