@@ -1,4 +1,5 @@
 import { sum } from "./math.js";
+import "../src/app.css";
 
 window.addEventListener("DOMContentLoaded", () => {
   const el = document.querySelector("#app");
