@@ -40,6 +40,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
+/***/ "./src/webpack.png":
+/*!*************************!*\
+  !*** ./src/webpack.png ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"../dist/ee4fde2a2e58907e03c4f95bb16c4f85.png\");\n\n//# sourceURL=webpack://webpack_practice/./src/webpack.png?");
+
+/***/ }),
+
 /***/ "./src/app.css":
 /*!*********************!*\
   !*** ./src/app.css ***!
@@ -116,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _src_app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/app.css */ \"./src/app.css\");\n\r\n\r\n\r\nwindow.addEventListener(\"DOMContentLoaded\", () => {\r\n  const el = document.querySelector(\"#app\");\r\n\r\n  el.innerHTML = `\r\n    <h1>1 + 2 = ${(0,_math_js__WEBPACK_IMPORTED_MODULE_0__.sum)(1, 2)}</h1>\r\n  `;\r\n});\r\n\n\n//# sourceURL=webpack://webpack_practice/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _src_app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/app.css */ \"./src/app.css\");\n/* harmony import */ var _webpack_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./webpack.png */ \"./src/webpack.png\");\n\r\n\r\n\r\n\r\nwindow.addEventListener(\"DOMContentLoaded\", () => {\r\n  const el = document.querySelector(\"#app\");\r\n\r\n  el.innerHTML = `\r\n    <h1>1 + 2 = ${(0,_math_js__WEBPACK_IMPORTED_MODULE_0__.sum)(1, 2)}</h1>\r\n    <img src=\"${_webpack_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"]}\" alt=\"webpack\" /> \r\n  `;\r\n});\r\n\n\n//# sourceURL=webpack://webpack_practice/./src/app.js?");
 
 /***/ }),
 
